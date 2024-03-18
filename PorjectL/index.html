@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doc</title>
-    <link rel="stylesheet" href="stile.css" />
-</head>
-<body>
-    <header class="container">
-        <h1>Atendimento Casas Pernambucanas</h1>
-    </header>
-    <main>
-        <nav>
-            <ul>
-                <label for="i">Atendente diz:</label>
-                <li id="i">Blblblalsldalsld</li>
-                <label for="a">Você diz:</label>
-                <li id="a">Blblblalsldalsld</li>
-                <label for="b">Atendente diz:</label>
-                <li id="b">Blblblalsldalsld</li>
-                <label for="c">Você diz:</label>
-                <li id="c">Blblblalsldalsld</li>
-            </ul>
-        </nav>
-    </main>
-    <footer>
-        <input type="text" placeholder="Digite sua Mensagem:">
-        <button>Enviar</button>
-    </footer>
-</body>
+    <title>ex. 01 - chat html - sw front-end</title>
+    <link rel="stylesheet" href="chat.css">
+  </head>
+  <body>
+    <div id="chat-screen">
+      <header>
+        <h1>Atendimento on-line</h1>
+      </header>
+      <div class="messages-list">
+        <div class="message-item">
+          <div class="msg-user"><strong>Atendente diz:</strong></div>
+          <div class="msg-chat">Olá Sr. Blabla</div>
+        </div>
+        <div class="message-item">
+          <div class="msg-user"><strong>Atendente diz:</strong></div>
+          <div class="msg-chat">Blabla blabla blabla?</div>
+        </div>
+        <div class="message-item message-user">
+          <div class="msg-user"><strong>Você diz:</strong></div>
+          <div class="msg-chat">Blablaaaa Bla</div>
+        </div>
+        <div class="message-item message-user">
+          <div class="msg-user"><strong>Você diz:</strong></div>
+          <div class="msg-chat">Bla blabla Ba</div>
+        </div>
+        <div class="message-item">
+          <div class="msg-user"><strong>Atendente diz:</strong></div>
+          <div class="msg-chat">KKKKKKKKKKK blabla?</div>
+        </div>
+        <div class="message-item">
+          <div class="msg-user"><strong>Atendente diz:</strong></div>
+          <div class="msg-chat">Blabla Blaaba </div>
+        </div>
+      </div>
+      <form id="form-chat-send" action="https://httpbin.org/post" method="post">
+        <input type="text" id="message" name="me  ssage" placeholder="Digite sua mensagem aqui:" required>
+        <button type="submit">ENVIAR</button>
+      </form>
+    </div>
+  </body>
 </html>
